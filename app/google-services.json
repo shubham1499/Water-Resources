@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "593247952744",
+    "firebase_url": "https://waterresource-57492.firebaseio.com",
+    "project_id": "waterresource-57492",
+    "storage_bucket": "waterresource-57492.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593247952744:android:34f7b38970a78a154140dd",
+        "android_client_info": {
+          "package_name": "com.example.waterresource"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593247952744-sa450dcb2bh6o1r0i6agei8o18ritvpe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waterresource",
+            "certificate_hash": "c9383bc74b9ca49ee1d195a51032cbbd218a0003"
+          }
+        },
+        {
+          "client_id": "593247952744-s55baq0vacth9v76g3jrghhksdeoca1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSdwCjHAYRwCOOhhRMfzFOYkAFy-nvU50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593247952744-s55baq0vacth9v76g3jrghhksdeoca1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollFeed"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.waterresource.ui.InputDataPage2"
+
+    android:background="@color/cardview_light_background"
+    android:focusableInTouchMode="true">
+
+    android:id="@+id/personalDetailsCard"
+    style="@style/centreLocatorCardDesign"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pump Capacity (Hp)"
+            android:textSize="19sp"
+            android:layout_marginTop="50dp">
+        </TextView>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinnerPumpCapacityType">
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/simpleTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+
+            <!-- first row of the table layout-->
+            <TableRow
+
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/simpleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Seasonwise use"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/simpleTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Days (दिवस)"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+
+                    android:id="@+id/simpleTextView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Hours (तास)"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+            </TableRow>
+            <TableRow
+
+                android:id="@+id/secondRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/season1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Summer (उन्हाळा)"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+                <EditText
+                    android:id="@+id/edtSummerDays"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter Value" />
+                <EditText
+                    android:id="@+id/edtSummerHrs"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter Value" />
+
+            </TableRow>
+            <TableRow
+
+                android:id="@+id/thirdRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/season2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Winter (हिवाळा)"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+                <EditText
+                    android:id="@+id/edtWinterDays"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter Value" />
+                <EditText
+                    android:id="@+id/edtWinterHrs"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter Value" />
+            </TableRow>
+            <TableRow
+
+                android:id="@+id/fourthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/season3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dip"
+                    android:text="Monsoon (पावसाळा)"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+                <EditText
+                    android:id="@+id/edtMonsoonDays"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter Value" />
+                <EditText
+                    android:id="@+id/edtMonsoonHrs"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter Value" />
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:id="@+id/btnGoToInputPage3"
+            android:layout_marginTop="35dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/centre_button"
+            android:text="@string/send"
+            android:textColor="@color/whiteTextColor" />
+
+    </LinearLayout>
+</ScrollView>

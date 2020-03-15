@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollFeed"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.waterresource.ui.InputDataPage1"
+
+    android:background="@color/cardview_light_background"
+    android:focusableInTouchMode="true">
+
+        android:id="@+id/personalDetailsCard"
+        style="@style/centreLocatorCardDesign"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="TYPE OF SOURCE"
+                android:textSize="19sp"
+                android:layout_marginTop="50dp">
+            </TextView>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinnerSourceType">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="OWNERSHIP"
+                android:textSize="19sp"
+                android:layout_marginTop="40dp">
+            </TextView>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerOwnershipType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SEASONALITY"
+                android:textSize="19sp"
+                android:layout_marginTop="40dp">
+            </TextView>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerSeasonalityType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="USE OF SOURCE"
+                android:textSize="19sp"
+                android:layout_marginTop="40dp">
+            </TextView>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerUseOfSource"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:maxLines = "4"
+                android:singleLine ="false"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown">
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+
+
+            <Button
+                android:id="@+id/btnGoToInputPage2"
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/centre_button"
+                android:text="@string/send"
+                android:textColor="@color/whiteTextColor" />
+        </LinearLayout>
+</ScrollView>

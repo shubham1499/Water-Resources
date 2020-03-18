@@ -114,6 +114,7 @@ public class InputDataPage3 extends AppCompatActivity {
                                 ref = FirebaseDatabase.getInstance().getReference().child(info3.getTypeOfSource());
                                 String uidForNewResource = ref.push().getKey();
                                 ref.child(uidForNewResource).setValue(info3);
+                                ref.child(uidForNewResource).child("address").setValue(fulladdress);
                                 Intent intent = new Intent(InputDataPage3.this,HomePage.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(intent);
